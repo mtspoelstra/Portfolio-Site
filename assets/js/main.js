@@ -5,16 +5,14 @@
 */
 
 
-document.querySelector(".contact-me").addEventListener("click", goToContactMe)
+document.querySelector(".meet-me-btn").addEventListener("click", revealBio)
 
-function goToContactMe(){
-	// const elementScrollTo = document.querySelector(".contact-me-section")
+function revealBio(){
+	document.querySelector(".meet-me-section").classList.toggle("hidden")
+	document.querySelector(".meet-me-btn").classList.toggle("hidden")
+	document.querySelector(".contact-me-btn").classList.toggle("hidden")
+	document.querySelector(".services-section").classList.toggle("hidden")
 
-	// elementScrollTo.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
-
-
-
-	// console.log(elementScrollTo)
 	console.log("I've been clicked")
 }
 
